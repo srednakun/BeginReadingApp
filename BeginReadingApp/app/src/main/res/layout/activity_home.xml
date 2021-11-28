@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="openParentGuide"
+    app:layoutDescription="@xml/activity_home_scene"
+    tools:context=".ui.login.Home">
+
+    <Button
+        android:id="@+id/firstButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/kButton"
+        android:backgroundTint="@color/green"
+        android:onClick="sortButtons"
+        android:text="1" />
+
+
+    <Button
+        android:id="@+id/secondButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/firstButton"
+        android:backgroundTint="@color/green"
+        android:onClick="sortButtons"
+        android:text="2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/simpleGridView"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="46dp"
+        android:clickable="true"
+        android:onClick="openHelpPage"
+        app:srcCompat="@drawable/help" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/imageButton"
+        android:clickable="false"
+        android:fontFamily="@font/fredoka_one"
+        android:text="Books"
+        android:textColor="#F6BD60"
+        android:textSize="30sp" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/simpleGridView"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="46dp"
+        android:clickable="true"
+        android:onClick="openParentGuide"
+        app:srcCompat="@drawable/person" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/green"
+        android:clickable="true"
+        android:onClick="goToCreatePage"
+        android:src="?attr/actionModeCloseDrawable" />
+
+    <GridView
+        android:id="@+id/simpleGridView"
+        android:layout_width="325dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/kButton"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:numColumns="1" />
+
+    <Button
+        android:id="@+id/kButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="@color/green"
+        android:onClick="sortButtons"
+        android:text="K" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="85dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/kButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="261dp"
+        android:clickable="true"
+        android:fontFamily="@font/source_sans_pro"
+        android:onClick="showAllBooks"
+        android:text="Show All Books"
+        android:textColor="@color/purple"
+        android:textSize="18sp" />
+
+</RelativeLayout>
